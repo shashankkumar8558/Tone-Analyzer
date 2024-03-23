@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Speaking UI</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="tooglestyle.css" />
+		<script
+			src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+			type="module"
+		></script>
+	</head>
+
+	<body>
+		<h1 class="gradient-text">Tone Emotion Analyser</h1>
+		<div class="container">
+			<div class="mic-container">
+				<div class="speak">
+					<dotlottie-player
+						src="https://lottie.host/845c6bc2-a94a-43d2-b5c4-6e31ff3a39cf/fMk68Xcxfg.json"
+						background="transparent"
+						speed="0.5"
+						loop
+						autoplay
+						style="width: 200px; height: 200px; border-radius: 50%"
+					></dotlottie-player>
+				</div>
+				<div id="micBottom">Click on Mic to Start.</div>
+				<div class="audio-wave">
+					<dotlottie-player
+						src="https://lottie.host/f8d70d91-8f76-4df2-9895-37aac5df57f1/n5fbcISLvL.json"
+						background="transparent"
+						speed="2.5"
+						loop
+						autoplay
+						style="width: 400px; height: 300px"
+					></dotlottie-player>
+				</div>
+			</div>
+
+			<div class="sideContainer">
+				<!-- <div class="toogle-btns">
+					<button id="Transcript">Transcript</button>
+					<button id="Analysis">Analysis</button>
+				</div> -->
+				<!--  -->
+
+				<label class="switch">
+					<input type="checkbox" />
+					<span id="toogleSlider" class="slider">Transcript</span>
+				</label>
+				<!--  -->
+				<div class="text">
+					<div class="transcript">
+						<p>Transcript</p>
+					</div>
+					<div class="analysis">
+						<!-- <p>Analysis</p> -->
+						<div class="tone">
+							Tone:
+							<p></p>
+						</div>
+						<div class="explanation">
+							Explanation:
+							<p></p>
+						</div>
+						<div class="statistical">
+							Statistical Insights:
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

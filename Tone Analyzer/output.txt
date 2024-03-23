@@ -1,0 +1,5 @@
+{
+    "Tone": "Neutral",
+    "Explanation": "This text is a statement of fact or a question and does not express any specific emotion",
+    "Statistical": "No statistical insights are available from this text"
+}
